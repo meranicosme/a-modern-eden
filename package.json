@@ -1,8 +1,8 @@
 {
-  "name": "YOURNAMEHERE-design-system",
+  "name": "a-modern-eden-design-system",
   "version": "0.0.1",
-  "repository": "git@github.com:sparkbox/YOURNAMEHERE-design-system.git",
-  "author": "Kasey Bonifacio <kasey@heysparkbox.com>",
+  "repository": "git@github.com:sparkbox/a-modern-eden-design-system.git",
+  "author": "Merani Cosme <merani@heysparkbox.com>",
   "license": "MIT",
   "scripts": {
     "prestart": "run-p clean node-version",
