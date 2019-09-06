@@ -15,7 +15,7 @@
     - [The "btn" component](http://localhost:3000/patterns/components/buttons.html)
 - **Delete this documentation.** This documentation is for first-time setup. Go into [README.md](README.md) and delete this list of steps.
     
-# YOURNAMEHERE Design System
+# A Modern Eden Design System
 
 Setup
 -----
