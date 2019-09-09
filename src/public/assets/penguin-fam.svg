@@ -1,0 +1,28 @@
+<svg width="216" height="191" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g filter="url(#filter0_d)">
+    <path d="M137.37 188V79.47s70.25 17 70.25 108.53h-70.25zM122.05 188V1S1 30.28 1 188h121.05z" fill="#231F20"/>
+    <path d="M107.4 85.25zM110.92 82.06zM116.25 77.58l1.5-1.2-1.5 1.2zM73.13 129.94a169.6 169.6 0 0 1 27.3-37.83c-20.2 21.1-38.97 51.8-46.97 95.89h68.59v-85.65l-7.75-7.85-41.17 35.44zM122.05 73.1zM100.47 92.08c.55-.6 1.11-1.15 1.67-1.72l-1.67 1.72zM107.42 85.23zM109.23 83.6z" fill="#fff"/>
+    <path d="M117.74 76.39l-1.5 1.19-.2.17a169 169 0 0 0-5.12 4.31l-.08.07-1.6 1.44-.17.15a190.5 190.5 0 0 0-6.82 6.54l-.1.09c-.55.6-1.1 1.13-1.66 1.71a169.59 169.59 0 0 0-27.36 37.88L114.3 94.5l7.75 7.85V73.1a182.9 182.9 0 0 0-4.12 3.13l-.19.16z" fill="#EEE734"/>
+    <path d="M122.04 1L79.87 43.04l42.17 42.04 42.17-42.04L122.05 1z" fill="#231F20"/>
+    <path d="M155.05 33.9l-9.17 9.14 9.17 9.15 9.17-9.14-9.17-9.15z" fill="#EEE734"/>
+    <path d="M87.6 105.34v47.16l-24.2-23.58" fill="#231F20"/>
+    <path d="M127.17 36.6a2.7 2.7 0 0 0 3.24 2.65 2.72 2.72 0 0 0 1.98-3.69 2.71 2.71 0 0 0-5.22 1.04zM134.23 121.32V188h42.96c-6.8-34.65-25.96-55.04-42.96-66.68z" fill="#fff"/>
+    <path d="M164.6 152.22a97.6 97.6 0 0 0-30.35-33.12v24.36l7.61-9.7 22.75 18.46z" fill="#EEE734"/>
+    <path d="M161.85 103.88l-24.48 24.39-24.47-24.4 24.47-24.4 24.48 24.4z" fill="#231F20"/>
+    <path d="M123.54 103.88l-5.32 5.3-5.32-5.3 5.32-5.32 5.32 5.32z" fill="#EEE734"/>
+    <path d="M157.36 140.03v27.37l14.05-13.69M207.62 188s-1.19-5.94 5.37-5.94V188h-5.37z" fill="#231F20"/>
+    <path d="M166.1 42.84h-12.3" stroke="#231F20" stroke-width="1.46"/>
+    <path d="M129.89 98.56a2.7 2.7 0 0 0 3.24 2.66 2.72 2.72 0 0 0 1.97-3.69 2.71 2.71 0 0 0-5.21 1.03z" fill="#fff"/>
+  </g>
+  <defs>
+    <filter id="filter0_d" x="0" y="0" width="216" height="191" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dx="1" dy="1"/>
+      <feGaussianBlur stdDeviation="1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.23 0"/>
+      <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+  </defs>
+</svg>

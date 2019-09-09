@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:900,900i|Roboto:300,700|Roboto+Mono&display=swap');
-
 $c-base: #56485B;
 $c-pale: #F5F1F6;
+$primary-font: "AvenirNext", sans-serif;
 
 .drizzle-variant-button {
   border: none;
@@ -49,9 +48,9 @@ $c-pale: #F5F1F6;
   &__title {
     margin: 0;
 
-    font-family: 'Roboto', sans-serif;
+    font-family: 'AvenirNext', sans-serif;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 800;
 
     a {
       text-decoration: none;
@@ -72,7 +71,7 @@ $c-pale: #F5F1F6;
     border-radius: 0;
     appearance: none; // Just in case we missed anything.
 
-    font-family: 'Roboto', sans-serif;
+    font-family: 'AvenirNext', sans-serif;
     font-size: 0.8rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -93,7 +92,7 @@ $c-pale: #F5F1F6;
     margin: 0.2rem 0;
     padding: 0 0.7rem;
 
-    font-family: 'Roboto', sans-serif;
+    font-family: 'AvenirNext', sans-serif;
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
@@ -131,16 +130,17 @@ $c-pale: #F5F1F6;
 
 
 .drizzle-heading-1 {
-  font-family: 'Playfair Display', serif;
+  font-family: $primary-font;
   font-size: 3rem;
   line-height: 1;
   margin: 0 0 1em;
+  font-weight: 800;
 
   -webkit-font-smooothing: antialiased;
 }
 
 .drizzle-heading-2 {
-  font-family: 'Playfair Display', serif;
+  font-family: $primary-font;
   font-size: 1.2em;
 
   -webkit-font-smooothing: antialiased;
