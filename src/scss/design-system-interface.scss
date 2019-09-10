@@ -1,6 +1,6 @@
 $c-base: #56485B;
-$c-pale: #F5F1F6;
-$primary-font: "AvenirNext", sans-serif;
+$c-pale: #F9EFDC;
+$primary-font: "AvenirNext", "Avenir Next", sans-serif;
 
 .drizzle-variant-button {
   border: none;
@@ -20,7 +20,7 @@ $primary-font: "AvenirNext", sans-serif;
 }
 
 .drizzle-nav {
-  background: $c-base;
+  background: #483700;
   color: $c-pale;
   -webkit-font-smoothing: antialiased;
 
@@ -48,14 +48,15 @@ $primary-font: "AvenirNext", sans-serif;
   &__title {
     margin: 0;
 
-    font-family: 'AvenirNext', sans-serif;
-    font-size: 14px;
-    font-weight: 800;
+    font-family: $primary-font;
+    font-size: 1rem;
+    font-weight: 900;
 
     a {
       text-decoration: none;
       color: inherit;
       border: none;
+      font-family: $primary-font;
     }
 
     @media (min-width: 960px) {
@@ -110,7 +111,7 @@ $primary-font: "AvenirNext", sans-serif;
 
   &__link {
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: $primary-font;
     font-size: 14px;
 
     color: $c-pale !important;
@@ -151,13 +152,13 @@ $primary-font: "AvenirNext", sans-serif;
   color: $c-base;
 
   &__sub {
-    font-family: 'Roboto Mono', sans-serif;
+    font-family: $primary-font;
     font-size: 16px;
     display: block;
   }
 
   &__text {
-    font-family: 'Playfair Display', serif;
+    font-family: $primary-font;
     font-size: 36px;
 
     @media (min-width: 30em) {
@@ -168,7 +169,7 @@ $primary-font: "AvenirNext", sans-serif;
 
 .drizzle-p {
   font-size: 18px;
-  font-family: 'Roboto', sans-serif;
+  font-family: $primary-font;
   color: $c-base;
 }
 
@@ -199,7 +200,7 @@ $primary-font: "AvenirNext", sans-serif;
 
   &__title {
     font-size: 22px;
-    font-family: 'Roboto', sans-serif;
+    font-family: $primary-font;
     font-weight: 700;
     line-height: 1;
 
@@ -214,7 +215,7 @@ $primary-font: "AvenirNext", sans-serif;
 
   &__info {
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
+    font-family: $primary-font;
     color: $c-base;
 
     margin-top: 1em;
@@ -226,7 +227,7 @@ $primary-font: "AvenirNext", sans-serif;
     border: none;
 
     font-size: 14px;
-    font-family: 'Roboto', sans-serif;
+    font-family: $primary-font;
     font-weight: 700;
 
     background: $c-base;
@@ -237,7 +238,7 @@ $primary-font: "AvenirNext", sans-serif;
   &__variant-box {
     background: $c-base;
     color: $c-pale;
-    font-family: 'Roboto', sans-serif;
+    font-family: $primary-font;
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(9rem, 13rem));
@@ -269,7 +270,7 @@ $primary-font: "AvenirNext", sans-serif;
   }
 
   &__demo-box-title {
-    font-family: 'Roboto', sans-serif;
+    font-family: $primary-font;
     font-size: 12px;
     color: rgba($c-base, 0.7);
     margin: 0;
@@ -301,7 +302,7 @@ $primary-font: "AvenirNext", sans-serif;
   }
 
   &__demo-box-button {
-    font-family: 'Roboto', sans-serif;
+    font-family: $primary-font;
   }
 }
 

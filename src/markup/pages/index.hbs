@@ -4,7 +4,7 @@ layout: drizzle
 main-class: drizzle-white-bg
 ---
 
-<h1 class="drizzle-heading-1">{{data "global.companyName"}} - Design System</h1>
+<h1 class="drizzle-heading-1">{{data "global.companyName"}} - Design&nbsp;System</h1>
 
 <p class="drizzle-p u-margin-bottom-xl">This UI toolkit is a highly-modular design system for rapid web page development. It contains different materials that can be assembled into more complex page layouts. It includes working examples, code snippets and documentation.</p>
 
@@ -14,6 +14,15 @@ main-class: drizzle-white-bg
     {{#each (pages "demos" sortby="order")}}
       <li>
         <a href="{{url}}">{{{data.title}}}</a>
+      </li>
+    {{/each}}
+  </ul>
+
+  <!-- for inside components -->
+  <ul>
+    {{#each (data "test")}}
+      <li>
+        <a href="{{url}}">{{{title}}}</a>
       </li>
     {{/each}}
   </ul>
