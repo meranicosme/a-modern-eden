@@ -1,24 +1,15 @@
-**First-time setup instructions:**
-
-- [**Click this link and make a new repo.**](https://github.com/sparkbox/designsystemstarter/generate) This will start a repo using [GitHub's repository templates](https://github.blog/2019-06-06-generate-new-repositories-with-repository-templates/), which copies all the files from this one to the new repo.
-- **Add your company's name.** You'll need to change it from `YOURNAMEHERE` in:
-  - [package.json](package.json)
-  - [src/data/global.yaml](src/data/global.yaml)
-  - [README.md](README.md) (That's this file!)
-- **Start styling.** You can:
-  - **Build a color palette** in [src/scss/settings/_variables.scss](src/scss/settings/_variables.scss)
-  - **Adjust typography and default `<a>` styles** in [src/scss/tools/_mixins.scss](src/scss/tools/_mixins.scss)
-    - Add `@font-face` blocks in [src/scss/settings/_fonts.scss](src/scss/settings/_fonts.scss)
-    - Add `<link>`s to stylesheets in [src/markup/patterns/drizzle/partials/stylesheet-link-tags.hbs](src/markup/patterns/drizzle/partials/stylesheet-link-tags.hbs)
-  - Good starting places (must be running the app to view these pages):
-    - [Common Elements page](http://localhost:3000/demos/common-elements.html)
-    - [The "btn" component](http://localhost:3000/patterns/components/buttons.html)
-- **Delete this documentation.** This documentation is for first-time setup. Go into [README.md](README.md) and delete this list of steps.
-    
 # A Modern Eden Design System
+
+A Modern Eden (AME) is a small wholesale business centered around products created from animal illustrations. The goals of the website are to:
+
+1. Introduce users to the world of AME animals and products
+2. Provide a way for retailers to contact AME to sell products
+3. Provide customers a way to find a store near them
+4. Refresh the dated AME visual language
 
 Setup
 -----
+
 1. Before running the project setup node/npm ([Installation instructions](https://nodejs.org/en/download/)).
 
 2. Run `npm install`.
