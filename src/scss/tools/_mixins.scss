@@ -45,7 +45,7 @@
 @mixin default-link {
   // For browsers that don't support custom properties,
   // we define some base styles that work on most background colors.
-  color: inherit;
+  color: $c-ame-orange;
   border-bottom: 2px solid;
   border-color: lighten($c-default-link, 10%);
   text-decoration: none;
@@ -121,7 +121,7 @@
 }
 
 @mixin h1 {
-  font-family: "AvenirNext";
+  font-family: $primary-font;
   color: inherit;
   color: var(--heading-color);
 

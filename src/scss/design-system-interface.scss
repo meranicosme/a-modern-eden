@@ -1,6 +1,7 @@
-$c-base: #56485B;
+$c-base: #483700;
 $c-pale: #F9EFDC;
 $primary-font: "AvenirNext", "Avenir Next", sans-serif;
+$c-ame-orange: #F26531;
 
 .drizzle-variant-button {
   border: none;
@@ -26,7 +27,7 @@ $primary-font: "AvenirNext", "Avenir Next", sans-serif;
 
   &__header {
     padding: 0.7rem;
-
+    background-color: $c-ame-orange;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,7 +61,7 @@ $primary-font: "AvenirNext", "Avenir Next", sans-serif;
     }
 
     @media (min-width: 960px) {
-      margin-bottom: 1rem;
+      margin-bottom:0;
     }
   }
 
@@ -94,8 +95,8 @@ $primary-font: "AvenirNext", "Avenir Next", sans-serif;
     padding: 0 0.7rem;
 
     font-family: 'AvenirNext', sans-serif;
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 1rem;
+    font-weight: 800;
     text-transform: uppercase;
   }
 
@@ -112,9 +113,10 @@ $primary-font: "AvenirNext", "Avenir Next", sans-serif;
   &__link {
     text-decoration: none;
     font-family: $primary-font;
-    font-size: 14px;
+    font-size: 1rem;
 
     color: $c-pale !important;
+    font-weight: 600;
 
     display: block;
 
@@ -136,6 +138,7 @@ $primary-font: "AvenirNext", "Avenir Next", sans-serif;
   line-height: 1;
   margin: 0 0 1em;
   font-weight: 800;
+  color: $c-base;
 
   -webkit-font-smooothing: antialiased;
 }
@@ -168,7 +171,7 @@ $primary-font: "AvenirNext", "Avenir Next", sans-serif;
 }
 
 .drizzle-p {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-family: $primary-font;
   color: $c-base;
 }
