@@ -156,13 +156,17 @@ $c-ame-orange: #F26531;
 
   &__sub {
     font-family: $primary-font;
-    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 800;
+    text-transform: uppercase;
     display: block;
+    margin-bottom: 1rem;
   }
 
   &__text {
     font-family: $primary-font;
-    font-size: 36px;
+    font-size: 48px;
+    font-weight: 800;
 
     @media (min-width: 30em) {
       font-size: 48px;
@@ -204,7 +208,7 @@ $c-ame-orange: #F26531;
   &__title {
     font-size: 22px;
     font-family: $primary-font;
-    font-weight: 700;
+    font-weight: 800;
     line-height: 1;
 
     color: $c-base;

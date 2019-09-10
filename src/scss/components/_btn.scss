@@ -5,9 +5,11 @@
   // Reset default <a> styles
   text-decoration: none;
 
+  font-weight: 800;
+
   display: inline-block;
 
-  padding: 1em;
+  padding: 1rem 1.85rem;
 
   line-height: $line-height-tight;
 
@@ -46,29 +48,7 @@
 
     &:focus,
     &:hover {
-      background-color: lighten($c-btn-primary, 10%);
-    }
-  }
-
-  &--secondary {
-    color: black;
-    background-color: $c-btn-secondary;
-
-    &:focus,
-    &:hover {
-      background-color: lighten($c-btn-secondary, 10%);
-    }
-  }
-
-  &--tertiary {
-    color: white;
-
-    // Darkening for contrast for a11y
-    background-color: darken($c-btn-tertiary, 10%);
-
-    &:focus,
-    &:hover {
-      background-color: darken($c-btn-tertiary, 5%);
+      background-color: darken($c-ame-orange, 10%);
     }
   }
 
