@@ -10,7 +10,7 @@ A Modern Eden (AME) is a small wholesale business centered around products creat
 Setup
 -----
 
-1. Before running the project setup node/npm ([Installation instructions](https://nodejs.org/en/download/)).
+1. Before running the project setup node/npm ([Installation instructions](https://nodejs.org/en/download/)). Make sure you are running the Node version: 10.16.0.
 
 2. Run `npm install`.
 
@@ -33,7 +33,7 @@ The pattern library is be powered by [Drizzle](https://github.com/cloudfour/driz
 Public
 ------
 
-The contents of the `public/` directory will be copied directly into the root of the `dist/` directory.
+The contents of the `public/` directory will be copied directly into the root of the `dist/` directory. In here assets and fonts will exist.
 
 Sass
 ----
