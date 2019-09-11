@@ -36,6 +36,10 @@
 
 @mixin default-paragraph {
   margin: 0 0 space(lg);
+  color: $c-ame-dark-brown;
+  font-weight: 600;
+  font-size: 1.125rem;
+  font-family: $primary-font;
 
   &:only-child,
   &:last-child {
@@ -46,22 +50,14 @@
 @mixin default-link {
   // For browsers that don't support custom properties,
   // we define some base styles that work on most background colors.
-  color: $c-ame-orange;
-  border-bottom: 2px solid;
-  border-color: lighten($c-default-link, 10%);
+  color: $c-ame-dark-brown;
   text-decoration: none;
+  font-weight: 700;
+  transition: color ease-in 0.2s;
 
-  @supports (color: var(--link-color)) {
-    color: var(--link-color);
-    border-color: var(--link-color);
-
-    transition: background-position $ease-out-expo 150ms;
-
-    background-size: 100% 200%;
-    background-position-y: -100%;
-    background-image: linear-gradient(to top, transparent 50%, var(--link-color) 50%);
-    background-repeat: no-repeat;
-  }
+  &:hover {
+      color: lighten($c-default-link, 15%);
+}
 }
 
 @mixin default-ol-ul {
@@ -74,6 +70,9 @@
 
   > li {
     position: relative;
+    font-weight: 600;
+    font-size: 1.125rem;
+    font-family: $primary-font;
 
     &:not(:last-child) {
       padding-bottom: space(xs);
@@ -91,8 +90,9 @@
       right: 100%;
       margin-right: 0.4rem;
 
-      font-size: 0.875rem;
-      font-weight: bold;
+      font-size: 1.125rem;
+      font-weight: 600;
+      font-family: $primary-font;
 
       // Try to align these baselines with text baselines
       margin-top: 0.2rem;
@@ -104,7 +104,7 @@
   > li {
     &::before {
       content: '';
-      background-color: $c-soft-black;
+      background-color: $c-ame-orange;
 
       display: inline-block;
       width: 0.5rem;
@@ -126,8 +126,8 @@
   color: inherit;
   color: var(--heading-color);
 
-  font-size: 2.125em;
-  font-weight: bold;
+  font-size: 4.5rem;
+  font-weight: 800;
 
   margin: 0 0 space(lg);
 }
@@ -136,8 +136,8 @@
   color: inherit;
   color: var(--heading-color);
 
-  font-size: 1.625em;
-  font-weight: bold;
+  font-size: 3.625rem;
+  font-weight: 800;
 
   margin: 0 0 space(lg);
 }
@@ -146,8 +146,8 @@
   color: inherit;
   color: var(--heading-color);
 
-  font-size: 1.375em;
-  font-weight: bold;
+  font-size: 2rem;
+  font-weight: 800;
 
   margin: 0 0 space(md);
 }
@@ -156,8 +156,8 @@
   color: inherit;
   color: var(--heading-color);
 
-  font-size: 1.125em;
-  font-weight: bold;
+  font-size: 1.5rem;
+  font-weight: 800;
 
   margin: 0 0 space(md);
 }
@@ -166,17 +166,27 @@
   color: inherit;
   color: var(--heading-color);
 
-  font-size: 1em;
-  font-weight: bold;
+  font-size: 1.125rem;
+  font-weight: 800;
 
   margin: 0 0 space(md);
 }
 
 @mixin h6 {
-  font-size: 1em;
-  font-weight: normal;
+  font-size: 1rem;
+  font-weight: 800;
 
   margin: 0 0 space(md);
+}
+
+@mixin section-sub-heading {
+  font-family: $primary-font;
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  display: block;
 }
 
 @mixin visually-hidden($status:null) {

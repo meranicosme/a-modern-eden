@@ -1,8 +1,6 @@
-$c-nasty-blue: #0000ff;
 $c-ame-orange: #F26531;
-$c-painful-green: #00ff00;
-$c-terrible-red: #ff0000;
-$c-soft-black: #333;
+$c-ame-dark-brown: #483700;
+
 
 // This is the lightest value that still has
 // a >4.5 contrast ratio against white.
@@ -16,9 +14,7 @@ $c-lightest-gray: #767676;
 $c-lightest-gray-large-text: #949494;
 
 $c-btn-primary: $c-ame-orange;
-$c-btn-secondary: $c-painful-green;
-$c-btn-tertiary: $c-terrible-red;
 
-$c-default-link: $c-ame-orange;
+$c-default-link: $c-ame-dark-brown;
 
 $c-safe-focus: darken($c-ame-orange, 20%);
