@@ -3,14 +3,49 @@ $c-pale: #F9EFDC;
 $primary-font: "AvenirNext", "Avenir Next", sans-serif;
 $c-ame-orange: #F26531;
 
+//
+// FONT SIZES
+//
+$ff-xxs: 0.875rem;
+$ff-xs: 1rem;
+$ff-sm: 1.125rem;
+$ff-md: 1.5rem;
+$ff-lg: 2rem;
+$ff-xl: 3.625rem;
+$ff-xxl: 4.5rem;
+
+//
+// FONT WEIGHTS
+//
+
+$f-weight-regular: 400;
+$f-weight-medium: 600;
+$f-weight-demi: 700;
+$f-weight-bold: 800;
+$f-weight-xbold: 900;
+
+
 @mixin section-sub-heading {
-  font-size: 1rem;
-  font-weight: 800;
+  font-size: $ff-xs;
+  font-weight: $f-weight-bold;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 1rem;
   display: block;
   font-family: $primary-font;
+}
+
+@mixin default-paragraph {
+  margin: 0 0 space(lg);
+  color: $c-ame-dark-brown;
+  font-weight: $f-weight-medium;
+  font-size: $ff-sm;
+  font-family: $primary-font;
+
+  &:only-child,
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .drizzle-variant-button {
@@ -26,8 +61,8 @@ $c-ame-orange: #F26531;
   color: #4c4c4c;
   padding: 0 0.5em;
   text-transform: uppercase;
-  font-weight: bold;
-  font-size: 1rem;
+  font-weight: $f-weight-bold;
+  font-size: $ff-xs;
 }
 
 .drizzle-nav {
@@ -60,8 +95,8 @@ $c-ame-orange: #F26531;
     margin: 0;
 
     font-family: $primary-font;
-    font-size: 1.125rem;
-    font-weight: 900;
+    font-size: $ff-sm;
+    font-weight: $f-weight-bold;
 
     a {
       text-decoration: none;
@@ -85,8 +120,8 @@ $c-ame-orange: #F26531;
 
     font-family: $primary-font;
     letter-spacing: 1px;
-    font-size: 1rem;
-    font-weight: bold;
+    font-size: $ff-xs;
+    font-weight: $f-weight-bold;
     text-transform: uppercase;
     color: white;
     background-color: rgba(black, 0.4);
@@ -106,8 +141,8 @@ $c-ame-orange: #F26531;
     padding: 0 0.7rem;
 
     font-family: $primary-font;
-    font-size: 1.125rem;
-    font-weight: 800;
+    font-size: $ff-sm;
+    font-weight: $f-weight-bold;
     text-transform: uppercase;
   }
 
@@ -124,10 +159,10 @@ $c-ame-orange: #F26531;
   &__link {
     text-decoration: none;
     font-family: $primary-font;
-    font-size: 1.125rem;
+    font-size: $ff-sm;
 
     color: $c-pale !important;
-    font-weight: 600;
+    font-weight: $f-weight-medium;
 
     display: block;
 
@@ -145,10 +180,10 @@ $c-ame-orange: #F26531;
 
 .drizzle-heading-1 {
   font-family: $primary-font;
-  font-size: 3rem;
+  font-size: $ff-xl;
   line-height: 1;
   margin: 0 0 1em;
-  font-weight: 800;
+  font-weight: $f-weight-bold;
   color: $c-ame-dark-brown;
 
   -webkit-font-smooothing: antialiased;
@@ -156,8 +191,8 @@ $c-ame-orange: #F26531;
 
 .drizzle-heading-2 {
   font-family: $primary-font;
-  font-size: 2em;
-  font-weight: 800;
+  font-size: $ff-lg;
+  font-weight: $f-weight-bold;
 
   -webkit-font-smooothing: antialiased;
 }
@@ -165,7 +200,7 @@ $c-ame-orange: #F26531;
 .drizzle-collection-heading {
   line-height: 1;
   color: $c-ame-dark-brown;
-  font-weight: 800;
+  font-weight: $f-weight-bold;
 
   &__sub {
     @include section-sub-heading;
@@ -173,20 +208,17 @@ $c-ame-orange: #F26531;
 
   &__text {
     font-family: $primary-font;
-    font-size: 48px;
-    font-weight: 800;
+    font-size: $ff-xl;
+    font-weight: $f-weight-bold;
 
     @media (min-width: 30em) {
-      font-size: 48px;
+      font-size: $ff-xl;
     }
   }
 }
 
 .drizzle-p {
-  font-size: 1.125rem;
-  font-family: $primary-font;
-  color: $c-ame-dark-brown;
-  font-weight: 600;
+@include default-paragraph;
 }
 
 .drizzle-Layout-main {
@@ -201,10 +233,10 @@ $c-ame-orange: #F26531;
 .drizzle-pattern {
   background: white;
 
-  padding: 12px;
+  padding: 0.75rem;
 
   @media (min-width: 30em) {
-    padding: 48px;
+    padding: 3rem;
   }
 
   margin: 5rem 0;
@@ -215,9 +247,9 @@ $c-ame-orange: #F26531;
   }
 
   &__title {
-    font-size: 22px;
+    font-size: $ff-md;
     font-family: $primary-font;
-    font-weight: 800;
+    font-weight: $f-weight-bold;
     line-height: 1;
 
     color: $c-ame-dark-brown;
@@ -225,12 +257,12 @@ $c-ame-orange: #F26531;
     margin: 0;
 
     @media (min-width: 30em) {
-      font-size: 32px;
+      font-size: $ff-lg;
     }
   }
 
   &__info {
-    font-size: 16px;
+    font-size: $ff-xs;
     font-family: $primary-font;
     color: $c-ame-dark-brown;
 
@@ -242,9 +274,9 @@ $c-ame-orange: #F26531;
 
     border: none;
 
-    font-size: 14px;
+    font-size: $ff-xxs;
     font-family: $primary-font;
-    font-weight: 700;
+    font-weight: $f-weight-demi;
 
     background: $c-ame-dark-brown;
     color: $c-pale;
@@ -280,14 +312,14 @@ $c-ame-orange: #F26531;
   }
 
   &__variant-legend {
-    font-size: 0.85rem;
+    font-size: $ff-xxs;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: $f-weight-demi;
   }
 
   &__demo-box-title {
     font-family: $primary-font;
-    font-size: 12px;
+    font-size: 0.75rem;
     color: rgba($c-ame-dark-brown, 0.7);
     margin: 0;
   }
@@ -314,7 +346,7 @@ $c-ame-orange: #F26531;
     // This override's prism's default styles
     background: white !important;
     font-family: 'Roboto Mono', sans-serif !important;
-    font-size: 1rem;
+    font-size: $ff-xs;
   }
 
   &__demo-box-button {
