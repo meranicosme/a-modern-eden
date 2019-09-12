@@ -16,7 +16,7 @@
   margin: 0;
   padding: 0;
   text-align: inherit;
-  font-size: $ff-sm;
+  font-size: $font-size-sm;
   font-family: $primary-font;
   border-radius: 0;
   appearance: none; // Just in case we missed anything.
@@ -37,8 +37,8 @@
 @mixin default-paragraph {
   margin: 0 0 space(lg);
   color: $c-ame-dark-brown;
-  font-weight: $f-weight-medium;
-  font-size: $ff-sm;
+  font-weight: $weight-medium;
+  font-size: $font-size-sm;
   font-family: $primary-font;
 
   &:only-child,
@@ -52,7 +52,7 @@
   // we define some base styles that work on most background colors.
   color: $c-ame-dark-brown;
   text-decoration: none;
-  font-weight: $f-weight-medium;
+  font-weight: $weight-medium;
   transition: color ease-in 0.2s;
 
   &:hover {
@@ -70,8 +70,8 @@
 
   > li {
     position: relative;
-    font-weight: $f-weight-medium;
-    font-size: $ff-sm;
+    font-weight: $weight-medium;
+    font-size: $font-size-sm;
     font-family: $primary-font;
 
     &:not(:last-child) {
@@ -90,8 +90,8 @@
       right: 100%;
       margin-right: 0.4rem;
 
-      font-size: $ff-sm;
-      font-weight: $f-weight-medium;
+      font-size: $font-size-sm;
+      font-weight: $weight-medium;
       font-family: $primary-font;
 
       // Try to align these baselines with text baselines
@@ -126,8 +126,8 @@
   color: inherit;
   color: var(--heading-color);
 
-  font-size: $ff-xxl;
-  font-weight: $f-weight-bold;
+  font-size: $font-size-xxl;
+  font-weight: $weight-bold;
 
   margin: 0 0 space(lg);
 }
@@ -136,8 +136,8 @@
   color: inherit;
   color: var(--heading-color);
 
-  font-size: $ff-xl;
-  font-weight: $f-weight-bold;
+  font-size: $font-size-xl;
+  font-weight: $weight-bold;
 
   margin: 0 0 space(lg);
 }
@@ -146,8 +146,8 @@
   color: inherit;
   color: var(--heading-color);
 
-  font-size: $ff-lg;
-  font-weight: $f-weight-bold;
+  font-size: $font-size-lg;
+  font-weight: $weight-bold;
 
   margin: 0 0 space(md);
 }
@@ -156,8 +156,8 @@
   color: inherit;
   color: var(--heading-color);
 
-  font-size: $ff-md;
-  font-weight: $f-weight-bold;
+  font-size: $font-size-md;
+  font-weight: $weight-bold;
 
   margin: 0 0 space(md);
 }
@@ -166,23 +166,23 @@
   color: inherit;
   color: var(--heading-color);
 
-  font-size: $ff-sm;
-  font-weight: $f-weight-bold;
+  font-size: $font-size-sm;
+  font-weight: $weight-bold;
 
   margin: 0 0 space(md);
 }
 
 @mixin h6 {
-  font-size: $ff-xs;
-  font-weight: $f-weight-bold;
+  font-size: $font-size-xs;
+  font-weight: $weight-bold;
 
   margin: 0 0 space(md);
 }
 
 @mixin section-sub-heading {
   font-family: $primary-font;
-  font-size: $ff-xs;
-  font-weight: $f-weight-bold;
+  font-size: $font-size-xs;
+  font-weight: $weight-bold;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 1rem;
