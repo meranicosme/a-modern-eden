@@ -1,6 +1,24 @@
+//
+// AME COLOR PALETTE
+//
+$c-ame-pure-white: #FFFFFF;
+$c-ame-pure-black: #000000;
 $c-ame-orange: #F26531;
 $c-ame-dark-brown: #483700;
+$c-ame-polar: #E6F3FA;
+$c-ame-powder-blue: #B8D7E7;
+$c-ame-san-juan: #284E62;
+$c-ame-sushi: #8DC63F;
+$c-ame-pukey-green: #C3B600;
 
+// delete these later
+$c-soft-black: $c-ame-dark-brown;
+
+//
+// EXTRA COLORS IN SITE
+//
+$c-ame-pukey-green-lighter: #E8CF00;
+$c-ame-pukey-green-darker: #A89900;
 
 // This is the lightest value that still has
 // a >4.5 contrast ratio against white.
