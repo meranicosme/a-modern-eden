@@ -1,9 +1,28 @@
 //
 // FONTS
 //
-// make variables for font-weights
-$font-stack-primary: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $primary-font: "AvenirNext", sans-serif;
+
+//
+// FONT SIZES
+//
+$ff-xs: 1rem;
+$ff-sm: 1.125rem;
+$ff-md: 1.5rem;
+$ff-lg: 2rem;
+$ff-xl: 3.625rem;
+$ff-xxl: 4.5rem;
+
+//
+// FONT WEIGHTS
+//
+
+$f-weight-regular: 400;
+$f-weight-medium: 600;
+$f-weight-demi: 700;
+$f-weight-bold: 800;
+$f-weight-xbold: 900;
+
 //
 // BREAKPOINTS
 //
