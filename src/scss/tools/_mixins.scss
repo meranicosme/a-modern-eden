@@ -36,7 +36,7 @@
 
 @mixin default-paragraph {
   margin: 0 0 space(lg);
-  color: $c-ame-dark-brown;
+  color: $c-dark-brown;
   font-weight: $weight-medium;
   font-size: $font-size-sm;
   font-family: $primary-font;
@@ -50,7 +50,7 @@
 @mixin default-link {
   // For browsers that don't support custom properties,
   // we define some base styles that work on most background colors.
-  color: $c-ame-dark-brown;
+  color: $c-dark-brown;
   text-decoration: none;
   font-weight: $weight-medium;
   transition: color ease-in 0.2s;
@@ -104,12 +104,7 @@
   > li {
     &::before {
       content: '';
-<<<<<<< HEAD
-      background-color: $c-ame-orange;
-=======
-      background-color: $c-dark-brown;
->>>>>>> fix color names in  variables
-
+      background-color: $c-orange;
       display: inline-block;
       width: 0.5rem;
       height: 0.5rem;
