@@ -1,18 +1,15 @@
 //
 // AME COLOR PALETTE
 //
-$c-ame-pure-white: #FFFFFF;
-$c-ame-pure-black: #000000;
-$c-ame-orange: #F26531;
-$c-ame-dark-brown: #483700;
-$c-ame-polar: #E6F3FA;
-$c-ame-powder-blue: #B8D7E7;
-$c-ame-san-juan: #284E62;
-$c-ame-sushi: #8DC63F;
-$c-ame-pukey-green: #C3B600;
-
-// delete these later
-$c-soft-black: $c-ame-dark-brown;
+$c-pure-white: #FFFFFF;
+$c-pure-black: #000000;
+$c-orange: #F26531;
+$c-dark-brown: #483700;
+$c-polar: #E6F3FA;
+$c-powder-blue: #B8D7E7;
+$c-san-juan: #284E62;
+$c-sushi: #8DC63F;
+$c-pukey-green: #C3B600;
 
 //
 // EXTRA COLORS IN SITE
@@ -31,8 +28,8 @@ $c-lightest-gray: #767676;
 // Large text is >=24px, or >=18.67px if it's bold
 $c-lightest-gray-large-text: #949494;
 
-$c-btn-primary: $c-ame-orange;
+$c-btn-primary: $c-orange;
 
-$c-default-link: $c-ame-dark-brown;
+$c-default-link: $c-dark-brown;
 
-$c-safe-focus: darken($c-ame-orange, 20%);
+$c-safe-focus: darken($c-orange, 20%);

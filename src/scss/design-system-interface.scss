@@ -1,7 +1,7 @@
 $c-ame-dark-brown: #483700;
 $c-pale: #F9EFDC;
 $primary-font: "AvenirNext", "Avenir Next", sans-serif;
-$c-ame-orange: #F26531;
+$c-orange: #F26531;
 
 //
 // FONT SIZES
@@ -72,7 +72,7 @@ $weight-xbold: 900;
 
   &__header {
     padding: 0.7rem;
-    background-color: $c-ame-orange;
+    background-color: $c-orange;
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -104,7 +104,11 @@
   > li {
     &::before {
       content: '';
+<<<<<<< HEAD
       background-color: $c-ame-orange;
+=======
+      background-color: $c-dark-brown;
+>>>>>>> fix color names in  variables
 
       display: inline-block;
       width: 0.5rem;
