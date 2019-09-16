@@ -1,0 +1,17 @@
+<svg width="2000" height="800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="2000" height="800" fill="pink" />
+  <path id="cloud" d="M125.94 43a7.1 7.1 0 0 0-12.13-6.21 7.05 7.05 0 0 0-4.76-2.23 10.25 10.25 0 0 0-12.4-6.02A15.21 15.21 0 0 0 80.52 18.4a19.6 19.6 0 0 0-19.78-8.7 22.86 22.86 0 0 0-36.62 5.94A16.95 16.95 0 0 0 6.27 43h119.66z" fill="#D8E8F1" filter="url(#filter0_d)"/>
+  <defs>
+    <filter id="filter0_d" x="0" y="0" width="130.07" height="46" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dx="1"/>
+      <feGaussianBlur stdDeviation="1.5"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.17 0"/>
+      <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+  </defs>
+  <use href="#cloud" x="140" y="200" transform="scale(1.5)" />
+  <use href="#cloud" x="300" y="40" transform="scale(2.5)" />
+</svg>

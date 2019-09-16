@@ -65,6 +65,8 @@
 //    Class-based selectors which define undecorated design patterns,
 //    for example media object known from OOCSS.
 
+
+
 // =====================================================================
 // 6. Components
 //    Specific UI components. This is where majority of our work takes place
@@ -74,6 +76,7 @@
 @import "components/link";
 @import "components/list";
 @import "components/btn";
+@import "components/navigation";
 
 // =====================================================================
 // 7. Vendors
