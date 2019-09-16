@@ -13,7 +13,6 @@
     "server": "node tasks/server.js",
     "watch": "node tasks/watch.js",
     "patterns": "node tasks/patterns.js",
-    "svg-sprite": "node tasks/svg-sprite.js",
     "sass": "node-sass src/scss/ -o dist/css/ --output-style compressed",
     "postsass": "postcss dist/css/*.css -u autoprefixer --no-map -d dist/css",
     "js": "NODE_ENV=production webpack -p",
