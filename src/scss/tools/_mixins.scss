@@ -41,6 +41,12 @@
 }
 }
 
+@mixin default-link-ul {
+  list-style: none;
+  margin: 0.4375rem 0 0;
+  padding: 0;
+}
+
 @mixin default-ol-ul {
   margin: 0;
   padding: 0 0 0 1.1rem;
@@ -191,4 +197,19 @@
       0 0 0 2px $c-safe-focus,
       0 0 0 4px white !important;
   }
+}
+
+@mixin position-fixed {
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+@mixin flex-row-space-between {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  align-items: center;
 }

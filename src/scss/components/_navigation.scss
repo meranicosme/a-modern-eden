@@ -1,0 +1,53 @@
+.header {
+  width: 100%;
+}
+
+.navigation {
+  @include position-fixed;
+  background-color: $c-pure-white;
+
+  &__container {
+    @include flex-row-space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2.5rem 0;
+    max-width: 123.75rem;
+  }
+
+  &__logo {
+    margin: 0 auto;
+    width: 12.5rem;
+
+    @media (min-width: $bp-sm) {
+      margin: 0 auto;
+      width: 15.5rem;
+    }
+
+    @media (min-width: $nav-bp) {
+      margin: 0;
+      width: 16.75rem;
+    }
+  }
+
+  &__list {
+    display: none;
+    @include default-link-ul;
+
+    @media (min-width: $nav-bp) {
+      display: flex;
+      flex-flow: row wrap;
+    }
+
+    &__item {
+      margin-left: 1.5rem;
+
+      @media (min-width: $bp-xl) {
+        margin-left: 3rem;
+      }
+    }
+  }
+
+  &__link {
+    @include default-link;
+  }
+}
