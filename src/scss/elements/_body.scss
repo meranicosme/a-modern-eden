@@ -1,9 +1,7 @@
 body {
   font-family: $primary-font;
   line-height: $line-height-normal;
-
   color: $c-dark-brown;
-
   // This forces a scrollbar
   min-height: 100.1vh;
 }

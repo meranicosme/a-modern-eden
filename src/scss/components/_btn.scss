@@ -1,7 +1,5 @@
 .c-btn {
-  // Reset default <button> styles
   @include unbuttonize;
-  // Reset default <a> styles
   text-decoration: none;
   font-weight: 800;
   display: inline-block;

@@ -1,10 +1,8 @@
 $c-dark-brown: #483700;
 $c-pale: #F9EFDC;
 $primary-font: "AvenirNext", "Avenir Next", sans-serif;
-$c-orange: #F26531;
-//
-// FONT SIZES
-//
+$c-orange: #F26531; 
+
 $font-size-xxs: 0.875rem;
 $font-size-xs: 1rem;
 $font-size-sm: 1.125rem;
@@ -12,9 +10,7 @@ $font-size-md: 1.5rem;
 $font-size-lg: 2rem;
 $font-size-xl: 3.625rem;
 $font-size-xxl: 4.5rem;
-//
-// FONT WEIGHTS
-//
+
 $weight-regular: 400;
 $weight-medium: 600;
 $weight-demi: 700;
@@ -79,6 +75,7 @@ $weight-xbold: 900;
     grid-template-columns: repeat(auto-fit, 15rem);
     grid-gap: 1.3rem;
     justify-content: space-around;
+
     @media (min-width: 960px) {
       display: block !important;
     }
@@ -96,6 +93,7 @@ $weight-xbold: 900;
       border: none;
       font-family: $primary-font;
     }
+
     @media (min-width: 960px) {
       margin-bottom: 0;
     }
@@ -233,7 +231,7 @@ $weight-xbold: 900;
     padding-bottom: 1rem;
     color: $c-dark-brown;
     margin: 0;
-    
+
     @media (min-width: 30em) {
       font-size: $font-size-lg;
     }
