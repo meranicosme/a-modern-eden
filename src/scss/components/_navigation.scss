@@ -5,6 +5,7 @@
 .navigation {
   @include position-fixed;
   background-color: $c-pure-white;
+  z-index: $z-index-10;
 
   &__container {
     @include flex-row-space-between;
