@@ -1,0 +1,144 @@
+.c-main-section {
+  position: relative;
+  overflow: hidden;
+  margin-top: 5rem;
+  background-size: 17%, cover, cover;
+  background-position: 15% 29.8125rem, 0 24.3125rem, 0 3.4375rem;
+  background-image: url("../assets/ice-block3.svg"), url("../assets/ice-water.svg"), url("../assets/ice-mountain-background.svg");
+  background-repeat: no-repeat;
+  width: 100%;
+  box-sizing: border-box;
+
+  @media (min-width: $hero-bp-sm) {
+    margin-top: 8.125rem;
+    background-size: auto, auto, auto, cover, cover, auto;
+    background-image: url("../assets/ice-block1.svg"), url("../assets/ice-block3.svg"), url("../assets/ice-block4.svg"), url("../assets/ice-water.svg"), url("../assets/ice-mountain-background.svg"), url("../assets/yellow-sun.svg");
+    background-position: -5rem 40.875rem, 21% 37.625rem, 91% 39.125rem, 0 34.5rem, 0 7.8125rem, 88% 10.4375rem;
+  }
+
+  @media (min-width: $hero-bp-lg) {
+    margin-top: 10.5rem;
+    background-position: -1.125rem 40.875rem, 21% 37.625rem, 66% 38.875rem, 0 34.5rem, 0 7.8125rem, 88% 10.4375rem;
+  }
+
+  &__hero {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 123.75rem;
+    min-height: 40rem;
+
+    @media(min-width: $hero-bp-sm) {
+      width: 90%;
+      min-height: 47rem;
+    }
+  }
+
+  &__text {
+    z-index: $z-index-8;
+    display: inline-block;
+  }
+
+  &__heading {
+    @include h3;
+    margin: 0 0 1.125rem;
+
+    @media(min-width: $hero-bp-sm) {
+      @include h2;
+      margin: 0 0 2rem;
+    }
+
+    @media(min-width: $hero-bp-lg) {
+      @include h1;
+    }
+  }
+
+  &__paragraph {
+    @include default-paragraph;
+    max-width: 100%;
+
+    @media (min-width: $hero-bp-sm) {
+      font-size: $font-size-sm;
+      max-width: 55%;
+    }
+  }
+
+  &__cloud-container {
+    position: absolute;
+    top: -20%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__cloud {
+    filter: $svg-cloud-shadow;
+  }
+}
+@mixin svg-ratio-size($size, $size-ratio) {
+  width: $size;
+  height: $size * $size-ratio;
+}
+
+.c-walrus {
+  $size: 15rem;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - #{$size/2});
+  filter: $svg-animal-shadow;
+  @include svg-ratio-size($size, $size-ratio: 0.9158878505);
+
+  @media (min-width: $hero-bp-sm) {
+    $size: 20rem;
+    @include svg-ratio-size($size, $size-ratio: 0.9158878505);
+  }
+
+  @media (min-width: $hero-bp-md) {
+    $size: 25rem;
+    @include svg-ratio-size($size, $size-ratio: 0.9158878505);
+  }
+}
+
+.c-penguin-fam {
+  $size: 8rem;
+  position: absolute;
+  bottom: 32%;
+  left: calc(20% - #{$size/2});
+  filter: $svg-animal-shadow;
+  @include svg-ratio-size($size, $size-ratio: 0.8820754717);
+
+  @media (min-width: $hero-bp-sm) {
+    $size: 12rem;
+    left: calc(15% - #{$size/2});
+    bottom: 24%;
+    @include svg-ratio-size($size, $size-ratio: 0.8820754717);
+  }
+}
+
+.c-floating-penguin {
+  display: none;
+
+  @media (min-width: $hero-bp-lg) {
+    display: block;
+    $size: 10rem;
+    position: absolute;
+    bottom: 17.25%;
+    left: calc(75% - #{$size/2});
+    filter: $svg-animal-shadow;
+    @include svg-ratio-size($size, $size-ratio: 0.650273224);
+  }
+}
+
+.c-polar-bear {
+  display: none;
+  
+  @media (min-width: $hero-bp-lg) {
+    display: block;
+    $size: 30rem;
+    position: absolute;
+    bottom: 0;
+    right: calc(20% - #{$size/2});
+    filter: $svg-animal-shadow;
+    @include svg-ratio-size($size, $size-ratio: 0.3572984749);
+  }
+}

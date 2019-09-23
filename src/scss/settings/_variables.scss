@@ -31,7 +31,9 @@ $bp-md: 50rem;
 $bp-lg: 60rem;
 $bp-xl: 80rem;
 $nav-bp: 61.875rem;
-
+$hero-bp-sm: 37.5rem;
+$hero-bp-md: 56.25rem;
+$hero-bp-lg: 95rem;
 $grid-breakpoints: (
   sm: $bp-sm,
   md: $bp-md,
@@ -74,3 +76,9 @@ $line-height-tight: 1.15;
 // TRANSITIONS
 //
 $ease-out-expo: cubic-bezier(0.190, 1.000, 0.220, 1.000);
+
+//
+// SVG shadow filter
+//
+$svg-animal-shadow: drop-shadow(1px 0 2px rgba(0,0,0,0.4));
+$svg-cloud-shadow: drop-shadow(1px 0 1px rgba(0,0,0,0.2));

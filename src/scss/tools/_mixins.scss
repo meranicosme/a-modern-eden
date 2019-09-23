@@ -18,8 +18,9 @@
   margin: 0;
   color: $c-dark-brown;
   font-weight: $weight-medium;
-  font-size: $font-size-sm;
+  font-size: $font-size-xs;
   font-family: $primary-font;
+  line-height: 1.5;
 
   &:last-child,
   &:only-child {
@@ -104,6 +105,7 @@
   font-size: $font-size-xxl;
   font-weight: $weight-bold;
   margin: 0;
+  line-height: 1.2;
 }
 
 @mixin h2 {
@@ -112,6 +114,7 @@
   font-size: $font-size-xl;
   font-weight: $weight-bold;
   margin: 0;
+  line-height: 1.2;
 }
 
 @mixin h3 {
@@ -120,6 +123,7 @@
   font-size: $font-size-lg;
   font-weight: $weight-bold;
   margin: 0;
+  line-height: 1.1;
 }
 
 @mixin h4 {
@@ -128,6 +132,7 @@
   font-size: $font-size-md;
   font-weight: $weight-bold;
   margin: 0;
+  line-height: 1.1;
 }
 
 @mixin h5 {
@@ -136,6 +141,7 @@
   font-size: $font-size-sm;
   font-weight: $weight-bold;
   margin: 0;
+  line-height: 1.1;
 }
 
 @mixin h6 {
@@ -144,6 +150,7 @@
   font-size: $font-size-xs;
   font-weight: $weight-bold;
   margin: 0;
+  line-height: 1.1;
 }
 
 @mixin section-sub-heading {
