@@ -1,7 +1,7 @@
 .c-main-section {
   position: relative;
   overflow: hidden;
-  margin-top: 5rem;
+  margin-top: 10rem;
   background-size: 17%, cover, cover;
   background-position: 15% 29.8125rem, 0 24.3125rem, 0 3.4375rem;
   background-image: url("../assets/ice-block3.svg"), url("../assets/ice-water.svg"), url("../assets/ice-mountain-background.svg");
@@ -10,14 +10,13 @@
   box-sizing: border-box;
 
   @media (min-width: $hero-bp-sm) {
-    margin-top: 8.125rem;
+    margin-top: 15.125rem;
     background-size: auto, auto, auto, cover, cover, auto;
     background-image: url("../assets/ice-block1.svg"), url("../assets/ice-block3.svg"), url("../assets/ice-block4.svg"), url("../assets/ice-water.svg"), url("../assets/ice-mountain-background.svg"), url("../assets/yellow-sun.svg");
     background-position: -5rem 40.875rem, 21% 37.625rem, 91% 39.125rem, 0 34.5rem, 0 7.8125rem, 88% 10.4375rem;
   }
 
   @media (min-width: $hero-bp-lg) {
-    margin-top: 10.5rem;
     background-position: -1.125rem 40.875rem, 21% 37.625rem, 66% 38.875rem, 0 34.5rem, 0 7.8125rem, 88% 10.4375rem;
   }
 
@@ -131,7 +130,7 @@
 
 .c-polar-bear {
   display: none;
-  
+
   @media (min-width: $hero-bp-lg) {
     display: block;
     $size: 30rem;

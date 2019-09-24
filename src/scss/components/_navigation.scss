@@ -3,15 +3,18 @@
 }
 
 .navigation {
-  @include position-fixed;
   background-color: $c-pure-white;
+  display: block;
   z-index: $z-index-10;
+  @include position-fixed;
+  filter: drop-shadow(2px -1px 6px rgba(0,0,0,0.1));
+
 
   &__container {
     @include flex-row-space-between;
     width: 90%;
     margin: 0 auto;
-    padding: 2.5rem 0;
+    padding: 1.5rem 0;
     max-width: 123.75rem;
   }
 
