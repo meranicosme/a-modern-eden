@@ -76,14 +76,14 @@
 
   &__cloud-animation-right {
     animation: right 200s linear infinite;
-  	}
+  }
 
-    @keyframes right {
-    		to {
-        transform: translateX(2000px);
-    	}
+  @keyframes right {
+    to {
+      transform: translateX(2000px);
+    }
   }
-  }
+}
 
 @mixin svg-ratio-size($size, $size-ratio) {
   width: $size;
@@ -141,7 +141,7 @@
 
 .c-polar-bear {
   display: none;
-
+  
   @media (min-width: $hero-bp-lg) {
     display: block;
     $size: 30rem;
