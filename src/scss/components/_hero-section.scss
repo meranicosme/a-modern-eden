@@ -48,6 +48,7 @@
 
     @media(min-width: $hero-bp-lg) {
       @include h1;
+      margin: 0 0 2rem;
     }
   }
 
@@ -73,7 +74,18 @@
   &__cloud {
     filter: $svg-cloud-shadow;
   }
+
+  &__cloud-animation-right {
+    animation: right 200s linear infinite;
+  }
+
+  @keyframes right {
+    to {
+      transform: translateX(2000px);
+    }
+  }
 }
+
 @mixin svg-ratio-size($size, $size-ratio) {
   width: $size;
   height: $size * $size-ratio;
@@ -101,7 +113,7 @@
 .c-penguin-fam {
   $size: 8rem;
   position: absolute;
-  bottom: 32%;
+  bottom: 28%;
   left: calc(20% - #{$size/2});
   filter: $svg-animal-shadow;
   @include svg-ratio-size($size, $size-ratio: 0.8820754717);
@@ -109,7 +121,7 @@
   @media (min-width: $hero-bp-sm) {
     $size: 12rem;
     left: calc(15% - #{$size/2});
-    bottom: 24%;
+    bottom: 20%;
     @include svg-ratio-size($size, $size-ratio: 0.8820754717);
   }
 }

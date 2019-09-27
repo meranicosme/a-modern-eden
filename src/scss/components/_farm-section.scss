@@ -1,10 +1,50 @@
 .c-farm-section {
   position: relative;
+  overflow: hidden;
   margin-top: -2rem;
   background: url(../assets/grass.svg), url(../assets/sea-to-sky-background.svg);
   background-size: auto;
   background-position: 0 bottom, 0 top;
   background-repeat: repeat-x;
-  min-height: 50rem;
+  min-height: 70rem;
   filter: drop-shadow(2px -1px 2px rgba(0, 0, 0, 0.2));
+
+  &__container {
+    width: 80%;
+    margin: 15rem auto;
+    max-width: 123.75rem;
+    min-height: 40rem;
+    display: grid;
+    grid-template-columns: $text-col-width 1fr $text-col-width;
+
+    @media(min-width: $hero-bp-sm) {
+      width: 90%;
+      min-height: 45rem;
+    }
+  }
+
+  &__text {
+    z-index: $z-index-8;
+    display: inline-block;
+    width: 100%;
+    grid-column: 3 / span 1;
+  }
+
+  &__paragraph {
+    @include default-paragraph;
+    max-width: 100%;
+
+    @media (min-width: $hero-bp-sm) {
+      font-size: $font-size-sm;
+    }
+  }
+
+  &__cloud-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
 }
