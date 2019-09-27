@@ -48,6 +48,7 @@
 
     @media(min-width: $hero-bp-lg) {
       @include h1;
+      margin: 0 0 2rem;
     }
   }
 
@@ -141,7 +142,7 @@
 
 .c-polar-bear {
   display: none;
-  
+
   @media (min-width: $hero-bp-lg) {
     display: block;
     $size: 30rem;
